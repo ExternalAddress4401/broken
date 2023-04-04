@@ -1,0 +1,19 @@
+{
+  "name": "frida-agent-example",
+  "version": "1.0.0",
+  "description": "Example Frida agent written in TypeScript",
+  "private": true,
+  "main": "agent/index.ts",
+  "scripts": {
+    "test": "frida-compile agent/index.ts -o script.js -w"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^18.0.0",
+    "@types/node": "^17.0.33",
+    "frida-compile": "^10.2.5"
+  },
+  "dependencies": {
+    "frida-il2cpp-bridge": "file:/./tmp/file.tgz",
+    "typescript": "^4.6.4"
+  }
+}
